@@ -65,7 +65,8 @@ var questionFourAnswer = '';
 
 
 //-----------------------------
-//DO NOT EDIT THIS SECTION:
+    //DO NOT EDIT THIS SECTION:
+    //This section will populate your HTML file with your answers.
 //-----------------------------
 window.onload = function () {  
 
