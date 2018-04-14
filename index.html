@@ -8,130 +8,38 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src='exercises.js'></script>
 
-  <title>Week 4 Homework</title>
+  <title>Week 6 Homework</title>
 
 </head>
 
 <body>
-  <h1>Week 4 Exercises</h1>
+  <h1>Week 6 Exercises</h1>
 <div>
   <div>
-    <h3>#1. The Fortune Teller</h3>
-    Why pay a fortune teller when you can just program your fortune yourself? Store the following into variables:
-  </div>
-  <ul>
-    <li>Number of burgers</li>
-    <li>Friend's name</li>
-    <li>Restaurant name</li>
-    <li>Day of the week</li>
-  </ul>
-  <div>
-    The result on the screen should look like this: "You will be eating _____ burgers at this restaurant: _____ with my friend, _____, on this day: ______"
-  </div>
-  <br/>
-  <div>
-    Make the button below hide or show the answer when you click on it. (Read the code inside this index.html file for some hints)
-  </div>
-  <br/>
-  <div>
-    <!-- 
-      HINT: Here's a sample: 
-
-        <p id="demo">JavaScript can hide HTML elements.</p>
-
-        <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
-        
-      In the code above, it finds the element with the id of 'demo', and and hides the content of 'demo'.
-    -->
-    <button>
-      Result: 
-    </button>
-    <strong>
-      <span id='answer1'></span>
-    </strong>
-  </div>
-  <div>
-    <h3>#2 The Age Calculator</h3>
-    Forgot how old someone is? Calculate it! You will have a total of 3 variables: the current year, the birth year, and a calculation based on the 2 years.
-    Calculate their 2 possible ages based on the stored values. 
-  </div>
-  <ul>
-    <li>Current Year</li>
-    <li>Birth Year</li>
-  </ul>
-  <div>
-    The result on the screen should look like this: "They are either 14 or 15", substituting the values.
-  </div>
-    <br/>
-    <div>
-      Add a button below that displays the answer in font size 20.
-    </div>
-    <br/>
-  <div>
-    <!-- 
-      HINT: Don't forget to wrap the word 'Result:' in a button tag. 
-    -->
-    Result: 
-    <strong>
-      <span id='answer2'></span>
-    </strong>
-  </div>
-  <div>
-    <h3>#3. The Temperature Converter</h3>
-    <p>Let's make a program to convert celsius tempatures to fahrenheit and vice versa, so we can complain about the weather with
-      our friends oversees.</p>
-    <p>
-      <strong>Reminder:</strong> To convert celsius to fahrenheit, multiply by 9, then divide by 5, then add 32. To convert fahrenheit
-      to celsius, deduct 32, then multiply by 5, then divide by 9.</p>
-    <p>
-      <strong>Unicode Characters:</strong> To print the degrees symbol in JavaScript, we need to use the write
-      <code>\u00B0</code> to represent the unicode character for the degress symbol.
-    </p>
+    <h3>The Fortune Teller: With Functions!</h3>
+    <p>Let's turn one of last week's exercises into a function.</p>
     <ul>
-      <li>Store a celsius temperature into a variable.</li>
-      <li>Convert it to fahrenheit and the result should be "___ degrees Celsius is ___ degrees Farenheit".</li>
-      <li>Now store a fahrenheit temperature into a variable.</li>
-      <li>Convert it to celsius and the result should be "___ degrees Farenheit is ___ degrees Celsius."</li>
+      <li>Write a function named <code>tellFortune</code> that:
+        <ul>
+          <li>takes 4 arguments: number of children, partner's name, geographic location, job title.</li>
+          <li>outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."</li>
+        </ul>
+      </li>
+      <li>Call that function 3 times with 3 different values for the arguments.</li>
     </ul>
-      <br/>
-      <div>
-        Add some CSS so that when you hover over the word 'Result', the answer will be displayed. (Read the code inside this index.html file for some hints)
-      </div>
-      <br/>
-    <div>
-      <!-- HINT: This involves a combination of CSS and DOM manipulation. Think about the display style for id='answer3a'. -->
-      Result (Celsius to Farenheit): 
-      <strong>
-        <span id='answer3a'></span>
-      </strong>
-    </div>
-      <br/>
-    <div>Result (Farenheit to Celsius): 
-      <strong>
-        <span id='answer3b'></span>
-      </strong>
-    </div>
-    <div>
-      <h3>#4. Bonus Question: Using Math functions</h3>
-      <p>JavaScript has a built-in tool that can generate a random number between 0 and 1. This tool is called a
-        <em>method</em>. We'll talk about methods more later in the class. For now, know if you type
-        <code>Math.random()</code>, you'll get a random number between 0 and 1.</p>
-      
-      <p>Using this tool, update your fahrenheit to celsius tempature conversion program to do the following:</p>
-      <ul>
-        <li>Instead of inputing a value for the Fahrenheit tempature, use Math.random() to generate a random tempature between 0 and
-          100</li>
-        <li>The result can be the same as #3. The only difference is the way you are generating the initial temperature."
-        </li>
-      </ul>
-        <br/>
-      <div>
-        Result: 
-        <strong>
-          <span id='answer4'></span>
-        </strong>
-      </div>
-    </div>
+  </div>
+  <br/>
+  <div>
+    <h3>What number is bigger?</h3>
+    <p>Write a function that compares two numbers and returns the larger one. Be sure to try it out with some different numbers. Bonus: add error messages if the numbers are equal or cannot be compared.</p>
+    <p>Don't forget to test it!</p>
+  </div>
+  <br/>
+  <div>
+    <h3>Top Choice</h3>
+    <p>Create an array to hold your top choices (colors, presidents, whatever). For each choice, log to the screen a string like: "My #1 choice is blue."</p>
+
+    <p>Bonus: Change it to log "My 1st choice, "My 2nd choice", "My 3rd choice", picking the right suffix for the number based on what it is. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice">The method slice</a> might be helpful here.</p>
   </div>
   
 </div>
